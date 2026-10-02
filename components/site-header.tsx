@@ -1,0 +1,2 @@
+import {ScanLine} from 'lucide-react';
+export default function SiteHeader({analysis=false}:{analysis?:boolean}){return <header className="topbar"><a className="brand" href="/" aria-label="见微首页"><span className="brand-symbol"><ScanLine size={22}/></span><strong>见微</strong><span className="brand-description">个股研究</span></a><a className="header-link" href={analysis?'/':'/analysis'}>{analysis?'返回首页':'美的集团研究'}</a></header>;}
